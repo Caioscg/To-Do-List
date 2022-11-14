@@ -5,47 +5,99 @@
 }
 body {
     background-color: #404258;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.week-days.blue {
+    --card--bg--color: #338af3;
+    --card--title--border--color: #043167;
+    --card--border-bottom--color: #043167;
 }
 #app {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     flex-direction: column;
-    height: 99.5vh;
-    width: 99.9%;
+    height: 100vh;
+    width: 100%;
 }
 h1 {
-    color: #1b1616;
-    align-items: center;
+    color: #b1b0a3;
     font-size: 100px;
-    bottom: 300px;
-    position: relative;
-    z-index: 2;
+    margin-top: 20px;
+    font-variant: small-caps;
 }
 main {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #9F73AB;
-    position: absolute;
-    bottom: 0;
-    height: 900px;
+    flex-wrap: wrap;
+    background-color: #b1b0a3;
+    position: relative;
+    min-height: auto;
     width: 85vw;
     border-top-right-radius: 20%;
     border-top-left-radius: 20%;
 }
 .week-days {
     border: 1px solid;
-    margin: 20px;
+    margin: 40px;
     padding: 32px 23px;
     text-align: center;
-    width: 270px;
+    height: 270px;
+    width: 200px;
     border-radius: 6px;
     border: 0;
-    border-bottom: 2px solid #f7dd43;
+    border-bottom: 3px solid white;
+    margin-top: 70px;
 }
-.week-days:nth-child(1) {
-    background-color: rgb(134, 190, 146);
+#monday {
+    background-color: #338af3;
+    border-bottom: 3px solid #043167;
+}
+#monday h4 {
+    border: 1px solid #043167;
+}
+#tuesday {
+    background-color: #b5a341;
+    border-bottom: 3px solid #5b542a;
+}
+#tuesday h4 {
+    border: 1px solid #5b542a;
+}
+#wednesday {
+    background-color: #07934d;
+    border-bottom: 3px solid #335b2a;
+}
+#wednesday h4 {
+    border: 1px solid #335b2a;
+}
+#thursday {
+    background-color: #a23e2c;
+    border-bottom: 3px solid #61251a;
+}
+#thursday h4 {
+    border: 1px solid #61251a;
+}
+#friday {
+    background-color: #2ca294;
+    border-bottom: 3px solid #185851;
+}
+#friday h4 {
+    border: 1px solid #185851;
+}
+#saturday {
+    background-color: #c653bc;
+    border-bottom: 3px solid #762f70;
+}
+#saturday h4 {
+    border: 1px solid #762f70;
+}
+#sunday {
+    background-color: #d7792c;
+    border-bottom: 3px solid #8a4d1b;
+}
+#sunday h4 {
+    border: 1px solid #8a4d1b;
 }
 .week-days ul {
     display: flex;
@@ -53,23 +105,26 @@ main {
     gap: 24px;
 }
 .week-days h4 {
-    display: flex;
-    gap: 16px;
-    justify-content: center;
-    align-items: center;
     padding: 8px 16px;
-    border: 1px solid var(--card--title--border--color);
+    border: 1px solid #f7dd43;
     border-radius: 6px;
     width: fit-content;
     margin-inline: auto;
     margin-bottom: 53px;
-    color: #404258;
+    color: white;
 }
-
-@media (min-width: 700px) {
-    .week-days {
-        max-width: 900px;
-        flex-direction: row;
-        flex-wrap: wrap;
-    }
+footer {
+    background-color: #b1b0a3;
+    width: 85vw;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+footer p:nth-child(1) {
+    font-size: 20px;
+    margin-left: 2rem;
+}
+footer p:nth-child(2) {
+    margin-right: 20px;
 }
