@@ -21,10 +21,12 @@ body {
     width: 100%;
 }
 h1 {
-    color: #b1b0a3;
+    color: #a4a3b1;
     font-size: 100px;
     margin-top: 20px;
+    margin-bottom: 45px;
     font-variant: small-caps;
+    font-family: 'Sono', sans-serif;
 }
 main {
     display: flex;
@@ -32,14 +34,12 @@ main {
     align-items: center;
     flex-wrap: wrap;
     background-color: #b1b0a3;
-    position: relative;
     min-height: auto;
     width: 85vw;
     border-top-right-radius: 20%;
     border-top-left-radius: 20%;
 }
 .week-days {
-    border: 1px solid;
     margin: 40px;
     padding: 32px 23px;
     text-align: center;
@@ -47,7 +47,6 @@ main {
     width: 200px;
     border-radius: 6px;
     border: 0;
-    border-bottom: 3px solid white;
     margin-top: 70px;
 }
 #monday {
@@ -113,6 +112,10 @@ main {
     margin-bottom: 53px;
     color: white;
 }
+span {
+    font-size: 25px;
+    cursor: pointer;
+}
 footer {
     background-color: #b1b0a3;
     width: 85vw;
@@ -124,6 +127,7 @@ footer {
 footer p:nth-child(1) {
     font-size: 20px;
     margin-left: 2rem;
+    font-family: 'Sono', sans-serif;
 }
 footer p:nth-child(2) {
     margin-right: 20px;
