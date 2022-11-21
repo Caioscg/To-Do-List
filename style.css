@@ -27,6 +27,7 @@ h1 {
     margin-bottom: 45px;
     font-variant: small-caps;
     font-family: 'Sono', sans-serif;
+    cursor: default;
 }
 main {
     display: flex;
@@ -43,7 +44,7 @@ main {
     margin: 40px;
     padding: 32px 23px;
     text-align: center;
-    height: 270px;
+    height: fit-content;
     width: 200px;
     border-radius: 6px;
     border: 0;
