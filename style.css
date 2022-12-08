@@ -28,6 +28,7 @@ h1 {
     font-variant: small-caps;
     font-family: 'Sono', sans-serif;
     cursor: default;
+    text-align: center;
 }
 main {
     display: flex;
@@ -50,50 +51,61 @@ main {
     border: 0;
     margin-top: 110px;
 }
+#submitM, #submitT, #submitW, #submitQ, #submitF, #submitS, #submitD {
+    background-color: transparent; 
+    border: 0; 
+    cursor: pointer; 
+    visibility: hidden;
+    position: absolute;
+}
+.plus {
+    color: white;
+    font-size: 2rem;
+}
 #monday {
-    background-color: #338af3;
-    border-bottom: 3px solid #043167;
+    background: linear-gradient(135deg, #338af3, #043167, black);
+    border-bottom: 3px solid #338af3;
 }
 #monday h4 {
     border: 1px solid #043167;
 }
 #tuesday {
-    background-color: #b5a341;
-    border-bottom: 3px solid #5b542a;
+    background: linear-gradient(135deg, #e7ca26, #897c30, rgb(0, 0, 0));
+    border-bottom: 3px solid #e7ca26;
 }
 #tuesday h4 {
     border: 1px solid #5b542a;
 }
 #wednesday {
-    background-color: #07934d;
-    border-bottom: 3px solid #335b2a;
+    background: linear-gradient(135deg, #22c071, #335b2a, black);
+    border-bottom: 3px solid #22c071;
 }
 #wednesday h4 {
     border: 1px solid #335b2a;
 }
 #thursday {
-    background-color: #a23e2c;
-    border-bottom: 3px solid #61251a;
+    background: linear-gradient(135deg, #e3462a, #61251a, black);
+    border-bottom: 3px solid #e3462a;
 }
 #thursday h4 {
     border: 1px solid #61251a;
 }
 #friday {
-    background-color: #2ca294;
-    border-bottom: 3px solid #185851;
+    background: linear-gradient(135deg, #4dd4c4, #1c7066, black);
+    border-bottom: 3px solid #4dd4c4;
 }
 #friday h4 {
     border: 1px solid #185851;
 }
 #saturday {
-    background-color: #c653bc;
-    border-bottom: 3px solid #762f70;
+    background: linear-gradient(135deg, #e675dd, #762f70, black);
+    border-bottom: 3px solid #e675dd;
 }
 #saturday h4 {
     border: 1px solid #762f70;
 }
 #sunday {
-    background-color: #d7792c;
+    background: linear-gradient(135deg, #eb8f44, #8a4d1b, black);
     border-bottom: 3px solid #8a4d1b;
 }
 #sunday h4 {
