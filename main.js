@@ -1,4 +1,4 @@
-//TODO: fazer funcionar com o ENTER, colocar animações, transições, e melhorar a responsividade
+//TODO: fazer funcionar com o ENTER e melhorar a responsividade
 const mondayPlus = document.querySelector("#monday-plus")
 let mondayListContent = []
 let m = 0
@@ -45,6 +45,7 @@ mondayPlus.addEventListener("click", () => {
     const mondayCheck = document.querySelector("#submitM")
     mondayCheck.style.visibility = "visible"
     mondayCheck.addEventListener("click", () => {
+        
 
         let inputM = document.querySelector(`#name${m}`).value
 
@@ -94,7 +95,6 @@ tuesdayPlus.addEventListener("click", () => {
         
         </li>
         ` 
-
         tuesdayPlus.style.visibility = "visible"
         document.querySelector("#submitT").style.visibility = "hidden"
     })

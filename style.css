@@ -50,6 +50,8 @@ main {
     border-radius: 6px;
     border: 0;
     margin-top: 110px;
+
+    animation: downTop 1s;
 }
 #submitM, #submitT, #submitW, #submitQ, #submitF, #submitS, #submitD {
     background-color: transparent; 
@@ -58,64 +60,81 @@ main {
     visibility: hidden;
     position: absolute;
 }
+
 .plus {
     color: white;
     font-size: 2rem;
 }
+
 #monday {
     background: linear-gradient(135deg, #338af3, #043167, black);
     border-bottom: 3px solid #338af3;
 }
+
 #monday h4 {
     border: 1px solid #043167;
 }
+
 #tuesday {
     background: linear-gradient(135deg, #e7ca26, #897c30, rgb(0, 0, 0));
     border-bottom: 3px solid #e7ca26;
 }
+
 #tuesday h4 {
     border: 1px solid #5b542a;
 }
+
 #wednesday {
     background: linear-gradient(135deg, #22c071, #335b2a, black);
     border-bottom: 3px solid #22c071;
 }
+
 #wednesday h4 {
     border: 1px solid #335b2a;
 }
+
 #thursday {
     background: linear-gradient(135deg, #e3462a, #61251a, black);
     border-bottom: 3px solid #e3462a;
 }
+
 #thursday h4 {
     border: 1px solid #61251a;
 }
+
 #friday {
     background: linear-gradient(135deg, #4dd4c4, #1c7066, black);
     border-bottom: 3px solid #4dd4c4;
 }
+
 #friday h4 {
     border: 1px solid #185851;
 }
+
 #saturday {
     background: linear-gradient(135deg, #e675dd, #762f70, black);
     border-bottom: 3px solid #e675dd;
 }
+
 #saturday h4 {
     border: 1px solid #762f70;
 }
+
 #sunday {
     background: linear-gradient(135deg, #eb8f44, #8a4d1b, black);
     border-bottom: 3px solid #8a4d1b;
 }
+
 #sunday h4 {
     border: 1px solid #8a4d1b;
 }
+
 .week-days ul {
     display: flex;
     flex-direction: column;
     gap: 24px;
 }
+
 .week-days h4 {
     padding: 8px 16px;
     border: 1px solid #f7dd43;
@@ -124,11 +143,22 @@ main {
     margin-inline: auto;
     margin-bottom: 53px;
     color: white;
+
+    animation: topDown 1s 350ms backwards;
+    transition: all 400ms;
+
+    cursor: default;
 }
+
+.week-days h4:hover {
+    scale: 1.1;
+}
+
 span {
     font-size: 25px;
     cursor: pointer;
 }
+
 footer {
     background-color: #b1b0a3;
     width: 85vw;
@@ -137,14 +167,39 @@ footer {
     align-items: center;
     justify-content: space-between;
 }
+
 footer p:nth-child(1) {
     font-size: 20px;
     margin-left: 2rem;
     font-family: 'Sono', sans-serif;
 }
+
 footer p:nth-child(2) {
     margin-right: 20px;
 }
+
 input:focus {
     outline: 0;
+}
+
+@keyframes downTop {
+    0% {
+        transform: translateY(35px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes topDown {
+    0% {
+        transform: translateY(-35px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
 }
