@@ -35,7 +35,7 @@ mondayPlus.addEventListener("click", () => {
     <li>
 
     <form action="">
-        <input type="text" placeholder="Digite sua atividade" id="name${m}" autocomplete="off" style="background-color: transparent; border: 0;">
+        <input type="text" placeholder="Enter your activity" id="name${m}" autocomplete="off" style="background-color: transparent; border: 0;">
     </form>
     
     </li>
@@ -73,7 +73,7 @@ tuesdayPlus.addEventListener("click", () => {
     <li>
 
     <form action="">
-        <input type="text" placeholder="Digite sua atividade" id="name${t}" autocomplete="off" style="background-color: transparent; border: 0;">
+        <input type="text" placeholder="Enter your activity" id="name${t}" autocomplete="off" style="background-color: transparent; border: 0;">
     </form>
     
     </li>
@@ -109,7 +109,7 @@ wednesdayPlus.addEventListener("click", () => {
     <li>
 
     <form action="">
-        <input type="text" placeholder="Digite sua atividade" id="name${w}" autocomplete="off" style="background-color: transparent; border: 0;">
+        <input type="text" placeholder="Enter your activity" id="name${w}" autocomplete="off" style="background-color: transparent; border: 0;">
     </form>
     
     </li>
@@ -146,7 +146,7 @@ thursdayPlus.addEventListener("click", () => {
     <li>
 
     <form action="">
-        <input type="text" placeholder="Digite sua atividade" id="name${q}" autocomplete="off" style="background-color: transparent; border: 0;">
+        <input type="text" placeholder="Enter your activity" id="name${q}" autocomplete="off" style="background-color: transparent; border: 0;">
     </form>
     
     </li>
@@ -186,7 +186,7 @@ fridayPlus.addEventListener("click", () => {
     <li>
 
     <form action="">
-        <input type="text" placeholder="Digite sua atividade" id="name${f}" autocomplete="off" style="background-color: transparent; border: 0;">
+        <input type="text" placeholder="Enter your activity" id="name${f}" autocomplete="off" style="background-color: transparent; border: 0;">
     </form>
     
     </li>
@@ -224,7 +224,7 @@ saturdayPlus.addEventListener("click", () => {
     <li>
 
     <form action="">
-        <input type="text" placeholder="Digite sua atividade" id="name${s}" autocomplete="off" style="background-color: transparent; border: 0;">
+        <input type="text" placeholder="Enter your activity" id="name${s}" autocomplete="off" style="background-color: transparent; border: 0;">
     </form>
     
     </li>
@@ -261,7 +261,7 @@ sundayPlus.addEventListener("click", () => {
     <li>
 
     <form action="">
-        <input type="text" placeholder="Digite sua atividade" id="name${d}" autocomplete="off" style="background-color: transparent; border: 0;">
+        <input type="text" placeholder="Enter your activity" id="name${d}" autocomplete="off" style="background-color: transparent; border: 0;">
     </form>
     
     </li>
