@@ -52,13 +52,18 @@ main {
     margin-top: 110px;
 
     animation: downTop 1s;
+
+    position: relative;
 }
 #submitM, #submitT, #submitW, #submitQ, #submitF, #submitS, #submitD {
     background-color: transparent; 
     border: 0; 
     cursor: pointer; 
     visibility: hidden;
+
     position: absolute;
+    left: 44%;
+    bottom: 1rem;
 }
 
 .plus {
@@ -69,6 +74,7 @@ main {
 #monday {
     background: linear-gradient(135deg, #338af3, #043167, black);
     border-bottom: 3px solid #338af3;
+    color: white;
 }
 
 #monday h4 {
@@ -78,6 +84,7 @@ main {
 #tuesday {
     background: linear-gradient(135deg, #e7ca26, #897c30, rgb(0, 0, 0));
     border-bottom: 3px solid #e7ca26;
+    color: white;
 }
 
 #tuesday h4 {
@@ -87,6 +94,7 @@ main {
 #wednesday {
     background: linear-gradient(135deg, #22c071, #335b2a, black);
     border-bottom: 3px solid #22c071;
+    color: white;
 }
 
 #wednesday h4 {
@@ -96,6 +104,7 @@ main {
 #thursday {
     background: linear-gradient(135deg, #e3462a, #61251a, black);
     border-bottom: 3px solid #e3462a;
+    color: white;
 }
 
 #thursday h4 {
@@ -105,6 +114,7 @@ main {
 #friday {
     background: linear-gradient(135deg, #4dd4c4, #1c7066, black);
     border-bottom: 3px solid #4dd4c4;
+    color: white;
 }
 
 #friday h4 {
@@ -114,6 +124,7 @@ main {
 #saturday {
     background: linear-gradient(135deg, #e675dd, #762f70, black);
     border-bottom: 3px solid #e675dd;
+    color: white;
 }
 
 #saturday h4 {
@@ -123,6 +134,7 @@ main {
 #sunday {
     background: linear-gradient(135deg, #eb8f44, #8a4d1b, black);
     border-bottom: 3px solid #8a4d1b;
+    color: white;
 }
 
 #sunday h4 {

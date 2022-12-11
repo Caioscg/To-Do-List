@@ -34,8 +34,10 @@ mondayPlus.addEventListener("click", () => {
     ${mondayListContent.join("")}
     <li>
 
-    <form action="">
-        <input type="text" placeholder="Enter your activity" id="name${m}" autocomplete="off" style="background-color: transparent; border: 0;">
+    <form action="" class="form">
+        <input type="text" placeholder="Enter your activity" id="nameM${m}" autocomplete="off" style="background-color: transparent; border: 0;">
+
+        <input type="submit" value="✔️" id="submitM" style="font-size: 1.2rem;">
     </form>
     
     </li>
@@ -44,16 +46,17 @@ mondayPlus.addEventListener("click", () => {
     mondayPlus.style.visibility = "hidden"
     const mondayCheck = document.querySelector("#submitM")
     mondayCheck.style.visibility = "visible"
-    mondayCheck.addEventListener("click", () => {
-        
+    mondayCheck.addEventListener("click", (e) => {
+        e.preventDefault()
+        if (document.querySelector(`#nameM${m}`).value === "") return
 
-        let inputM = document.querySelector(`#name${m}`).value
+        let inputM = document.querySelector(`#nameM${m}`).value
 
         mondayListContent[m] = `
         <li>
    
         <form action="">
-            <input type="text" placeholder="Digite sua atividade" autocomplete="off" style="background-color: transparent; border: 0;" value="${inputM}">
+            <input type="text" placeholder="Enter your activity" autocomplete="off" style="background-color: transparent; border: 0;" value="${inputM}">
         </form>
         
         </li>
@@ -73,7 +76,9 @@ tuesdayPlus.addEventListener("click", () => {
     <li>
 
     <form action="">
-        <input type="text" placeholder="Enter your activity" id="name${t}" autocomplete="off" style="background-color: transparent; border: 0;">
+        <input type="text" placeholder="Enter your activity" id="nameT${t}" autocomplete="off" style="background-color: transparent; border: 0;">
+
+        <input type="submit" value="✔️" id="submitT" style="font-size: 1.2rem;">
     </form>
     
     </li>
@@ -82,19 +87,23 @@ tuesdayPlus.addEventListener("click", () => {
     tuesdayPlus.style.visibility = "hidden"
     const tuesdayCheck = document.querySelector("#submitT")
     tuesdayCheck.style.visibility = "visible"
-    tuesdayCheck.addEventListener("click", () => {
+    tuesdayCheck.addEventListener("click", (e) => {
 
-        let inputT = document.querySelector(`#name${t}`).value
+        e.preventDefault()
+        if (document.querySelector(`#nameT${t}`).value === "") return
+
+        let inputT = document.querySelector(`#nameT${t}`).value
 
         tuesdayListContent[t] = `
         <li>
    
         <form action="">
-            <input type="text" placeholder="Digite sua atividade" autocomplete="off" style="background-color: transparent; border: 0;" value="${inputT}">
+            <input type="text" placeholder="Enter your activity" autocomplete="off" style="background-color: transparent; border: 0;" value="${inputT}">
         </form>
         
         </li>
         ` 
+
         tuesdayPlus.style.visibility = "visible"
         document.querySelector("#submitT").style.visibility = "hidden"
     })
@@ -109,7 +118,9 @@ wednesdayPlus.addEventListener("click", () => {
     <li>
 
     <form action="">
-        <input type="text" placeholder="Enter your activity" id="name${w}" autocomplete="off" style="background-color: transparent; border: 0;">
+        <input type="text" placeholder="Enter your activity" id="nameW${w}" autocomplete="off" style="background-color: transparent; border: 0;">
+        
+        <input type="submit" value="✔️" id="submitW" style="font-size: 1.2rem;">
     </form>
     
     </li>
@@ -118,15 +129,18 @@ wednesdayPlus.addEventListener("click", () => {
     wednesdayPlus.style.visibility = "hidden"
     const wednesdayCheck = document.querySelector("#submitW")
     wednesdayCheck.style.visibility = "visible"
-    wednesdayCheck.addEventListener("click", () => {
+    wednesdayCheck.addEventListener("click", (e) => {
 
-        let inputW = document.querySelector(`#name${w}`).value
+        e.preventDefault()
+        if (document.querySelector(`#nameW${w}`).value === "") return
+
+        let inputW = document.querySelector(`#nameW${w}`).value
 
         wednesdayListContent[w] = `
         <li>
    
         <form action="">
-            <input type="text" placeholder="Digite sua atividade" autocomplete="off" style="background-color: transparent; border: 0;" value="${inputW}">
+            <input type="text" placeholder="Enter your activity" autocomplete="off" style="background-color: transparent; border: 0;" value="${inputW}">
         </form>
         
         </li>
@@ -146,7 +160,9 @@ thursdayPlus.addEventListener("click", () => {
     <li>
 
     <form action="">
-        <input type="text" placeholder="Enter your activity" id="name${q}" autocomplete="off" style="background-color: transparent; border: 0;">
+        <input type="text" placeholder="Enter your activity" id="nameQ${q}" autocomplete="off" style="background-color: transparent; border: 0;">
+        
+        <input type="submit" value="✔️" id="submitQ" style="font-size: 1.2rem;">
     </form>
     
     </li>
@@ -155,22 +171,22 @@ thursdayPlus.addEventListener("click", () => {
     thursdayPlus.style.visibility = "hidden"
     const thursdayCheck = document.querySelector("#submitQ")
     thursdayCheck.style.visibility = "visible"
-    thursdayCheck.addEventListener("click", () => {
+    thursdayCheck.addEventListener("click", (e) => {
+        
+        e.preventDefault()
+        if (document.querySelector(`#nameQ${q}`).value === "") return
 
-        let inputQ = document.querySelector(`#name${q}`).value
+        let inputQ = document.querySelector(`#nameQ${q}`).value
 
         thursdayListContent[q] = `
         <li>
    
         <form action="">
-            <input type="text" placeholder="Digite sua atividade" autocomplete="off" style="background-color: transparent; border: 0;" value="${inputQ}">
+            <input type="text" placeholder="Enter your activity" autocomplete="off" style="background-color: transparent; border: 0;" value="${inputQ}">
         </form>
         
         </li>
         ` 
-        
-        console.log(mondayListContent)
-
 
         thursdayPlus.style.visibility = "visible"
         document.querySelector("#submitQ").style.visibility = "hidden"
@@ -186,7 +202,9 @@ fridayPlus.addEventListener("click", () => {
     <li>
 
     <form action="">
-        <input type="text" placeholder="Enter your activity" id="name${f}" autocomplete="off" style="background-color: transparent; border: 0;">
+        <input type="text" placeholder="Enter your activity" id="nameF${f}" autocomplete="off" style="background-color: transparent; border: 0;">
+        
+        <input type="submit" value="✔️" id="submitF" style="font-size: 1.2rem;">
     </form>
     
     </li>
@@ -195,20 +213,22 @@ fridayPlus.addEventListener("click", () => {
     fridayPlus.style.visibility = "hidden"
     const fridayCheck = document.querySelector("#submitF")
     fridayCheck.style.visibility = "visible"
-    fridayCheck.addEventListener("click", () => {
+    fridayCheck.addEventListener("click", (e) => {
+        
+        e.preventDefault()
+        if (document.querySelector(`#nameF${f}`).value === "") return
 
-        let inputF = document.querySelector(`#name${f}`).value
+        let inputF = document.querySelector(`#nameF${f}`).value
 
         fridayListContent[f] = `
         <li>
    
         <form action="">
-            <input type="text" placeholder="Digite sua atividade" autocomplete="off" style="background-color: transparent; border: 0;" value="${inputF}">
+            <input type="text" placeholder="Enter your activity" autocomplete="off" style="background-color: transparent; border: 0;" value="${inputF}">
         </form>
         
         </li>
         ` 
-
 
         fridayPlus.style.visibility = "visible"
         document.querySelector("#submitF").style.visibility = "hidden"
@@ -224,7 +244,9 @@ saturdayPlus.addEventListener("click", () => {
     <li>
 
     <form action="">
-        <input type="text" placeholder="Enter your activity" id="name${s}" autocomplete="off" style="background-color: transparent; border: 0;">
+        <input type="text" placeholder="Enter your activity" id="nameS${s}" autocomplete="off" style="background-color: transparent; border: 0;">
+        
+        <input type="submit" value="✔️" id="submitS" style="font-size: 1.2rem;">
     </form>
     
     </li>
@@ -233,15 +255,18 @@ saturdayPlus.addEventListener("click", () => {
     saturdayPlus.style.visibility = "hidden"
     const saturdayCheck = document.querySelector("#submitS")
     saturdayCheck.style.visibility = "visible"
-    saturdayCheck.addEventListener("click", () => {
+    saturdayCheck.addEventListener("click", (e) => {
+        
+        e.preventDefault()
+        if (document.querySelector(`#nameS${s}`).value === "") return
 
-        let inputS = document.querySelector(`#name${s}`).value
+        let inputS = document.querySelector(`#nameS${s}`).value
 
         saturdayListContent[s] = `
         <li>
    
         <form action="">
-            <input type="text" placeholder="Digite sua atividade" autocomplete="off" style="background-color: transparent; border: 0;" value="${inputS}">
+            <input type="text" placeholder="Enter your activity" autocomplete="off" style="background-color: transparent; border: 0;" value="${inputS}">
         </form>
         
         </li>
@@ -261,7 +286,9 @@ sundayPlus.addEventListener("click", () => {
     <li>
 
     <form action="">
-        <input type="text" placeholder="Enter your activity" id="name${d}" autocomplete="off" style="background-color: transparent; border: 0;">
+        <input type="text" placeholder="Enter your activity" id="nameD${d}" autocomplete="off" style="background-color: transparent; border: 0;">
+
+        <input type="submit" value="✔️" id="submitD" style="font-size: 1.2rem;">
     </form>
     
     </li>
@@ -270,22 +297,22 @@ sundayPlus.addEventListener("click", () => {
     sundayPlus.style.visibility = "hidden"
     const sundayCheck = document.querySelector("#submitD")
     sundayCheck.style.visibility = "visible"
-    sundayCheck.addEventListener("click", () => {
+    sundayCheck.addEventListener("click", (e) => {
+        
+        e.preventDefault()
+        if (document.querySelector(`#nameD${d}`).value === "") return
 
-        let inputD = document.querySelector(`#name${d}`).value
+        let inputD = document.querySelector(`#nameD${d}`).value
 
         sundayListContent[d] = `
         <li>
    
         <form action="">
-            <input type="text" placeholder="Digite sua atividade" autocomplete="off" style="background-color: transparent; border: 0;" value="${inputD}">
+            <input type="text" placeholder="Enter your activity" autocomplete="off" style="background-color: transparent; border: 0;" value="${inputD}">
         </form>
         
         </li>
         ` 
-        
-        console.log(mondayListContent)
-
 
         sundayPlus.style.visibility = "visible"
         document.querySelector("#submitD").style.visibility = "hidden"
