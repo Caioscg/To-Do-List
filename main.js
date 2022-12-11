@@ -1,4 +1,4 @@
-//TODO: fazer funcionar com o ENTER e melhorar a responsividade
+//TODO: melhorar a responsividade(media queries) e por color white, mudar o readme
 const mondayPlus = document.querySelector("#monday-plus")
 let mondayListContent = []
 let m = 0
