@@ -1,4 +1,4 @@
-//TODO: melhorar a responsividade(media queries) e por color white, mudar o readme
+//TODO: melhorar a responsividade(media queries) e mudar o readme
 const mondayPlus = document.querySelector("#monday-plus")
 let mondayListContent = []
 let m = 0

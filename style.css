@@ -163,6 +163,10 @@ input:focus {
     outline: 0;
 }
 
+input {
+    color: white;
+}
+
 /***------- Plus button -------***/
 
 .plus {
